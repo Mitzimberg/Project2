@@ -1,0 +1,77 @@
+/*whenever I tried to use the WebAIM contrast checker I could not for the life of me get it to work, kept hitting a "forbidden" error
+and for*/
+
+body {
+    background-color: #f5f5dc;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 28px;
+}
+
+header {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 52px;
+}
+
+/*this is for the layout of images
+found tutorials for this on W3*/
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 10px;
+}
+.showcase img {
+    width: 100%;
+    height: auto;
+}
+
+.flavor-text {
+    display: flex;
+    justify-content: space-between; /*not too sure if justify content is the best way to go about it, but in the end it worked*/
+}
+.flavor-text ul {
+    list-style-type: none;
+    padding-left: 0; /*hahaha this solution to my uncentered text took me FOREVER*/
+    text-align: center;
+}
+.flavor-text li {
+    margin-bottom: 10px;
+}
+
+.about-art {
+    width: 40%;
+    margin-left: 12px;
+    position: relative;
+}
+.about-art p {
+    text-align: center;
+}
+
+.about-me {
+    width: 40%;
+    margin-right: 16px;
+    position: relative;
+}
+.about-me p {
+    text-align: center;
+}
+
+.extras {
+    text-align: center;
+}
+.extras ul {
+    list-style-type: none;
+    padding-left: 0;
+
+}
