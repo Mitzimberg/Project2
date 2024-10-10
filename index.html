@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project 1 Website</title>
+  <title>Project 2</title>
   <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="img/x-icon" href="img/LogoBackground.png">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -31,7 +32,9 @@
   <div class="header">
     <header>MITZIMBERG</header>
   </div>
-  <div class="showcase">
+
+ <div class="showcase-box">
+    <div class="showcase">
       <img src="img/Image1.jpg" alt="Artwork of a parrot">
       <img src="img/Image2.jpg" alt="Artwork of a humming-bird">
       <img src="img/Image3.jpg" alt="Artwork of a toucan">
@@ -54,7 +57,52 @@
       <img src="img/Image20.jpg" alt="Artwork of a lady">
     </div>
   </div>
+<div class="tabs-box">
+  <div class="tabs">
+      <button class="tab active" onclick="showTab('tab1')">Commission</button>
+      <button class="tab" onclick="showTab('tab2')">About Art</button>
+      <button class="tab" onclick="showTab('tab3')">About Me</button>
+      <button class="tab" onclick="showTab('tab4')">Socials</button>
+  </div>
+  <div class="tab-content">
+      <div id="tab1" class="tab-item active">
+          <p>Content for Tab 1</p>
+      </div>
+      <div id="tab2" class="tab-item">
+        <div class="about-art">
+          <h2>About my Art</h2>
+          <p>From Highschool I've full-sent art. Bouncing between many mediums and even now I'm still
+            fighting to find a passion I'm interested in. I've gone between things as simple as painting
+            and as complex as sculpture & installations. A lot of my best artworks come from Highschool
+            where I mostly dabbled with pencil and mixed-media and even logos/posters. Upon getting to 
+            college my artwork began to branch significantly where I am now painting, sculpting, and more.</p>
+        </div>
+      </div>
+      <div id="tab3" class="tab-item">
+        <div class="about-me">
+          <h3>About Me</h3>
+          <p>Right now I'm an art major at LSU, but I wasn't that at first. Originally in my Freshman year I was a Graphic Design major 
+            as I had found a passion for Graphic Design in Highschool. Unfortunately whenever I had vehicle problems in my Sophomore year I had to drop my Graphic Design major 
+            because they could not offer Online Courses, so I inevitably had to switch. My favorite color is red :)</p>
+        </div>
+      </div>
+      <div id="tab4" class="tab-item">
+        <div class="socials">
+          <h4>Socials</h4>
+          <div class=links>
+            <ul>
+              <p><a href="https://www.instagram.com/b.mitzimberg/" target="_blank">Instagram</a></p>
+              <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Twitter</a></p>
+              <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube</a></p>
+              <p><a href="https://github.com/Mitzimberg" target="_blank">GitHub</a></p>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 
+<!--
 <div class="flavor-text"  >
   <div class="about-art">
     <h1>About my Art</h1>
@@ -92,13 +140,8 @@
     <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
   </ul>
 </div>
-
-  <div class="copyright">
-    <footer>
-      Copyright &copy; 2024 Mitzimberg. All rights reserved.
-    </footer>
-  </div>
-
+-->
+<script src="js/main.js"></script>
 </body>
 
 </html>
