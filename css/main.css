@@ -18,17 +18,41 @@ header {
     font-family: "Playfair Display SC", serif;
     font-weight: 800;
     font-size: 52px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
     height: auto;
+    position: sticky;
+    background-color: #f5f5dc;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height */
+    overflow: hidden;
+}
+
+.hero-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.hero-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-images img.active {
+    opacity: 1;
+}
 /*this is for the layout of images
 found tutorials for this on W3*/
 .showcase-box {
@@ -36,13 +60,11 @@ found tutorials for this on W3*/
     width: 100%;
 }
 .showcase {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
     max-height: 100%;
     overflow-y: auto;
     padding: 10px;
-    position: absolute;
     width: 50%;
     left: 0;
     max-width: 100%;
@@ -81,7 +103,6 @@ found tutorials for this on W3*/
 }
 
 .tabs-box {
-    position: absolute;
     top: 10%;
     right: 0;
     width: 45%;
